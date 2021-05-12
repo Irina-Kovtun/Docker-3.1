@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgresql:
+    image: postgres:12-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=appindb
+      - POSTGRES_USER=irina
+      - POSTGRES_PASSWORD=admin
+
+
